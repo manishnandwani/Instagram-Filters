@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "bootstrap": "^4.0.0",
+    "node-http-server": "^8.1.2"
+  },
+  "version": ""
+}

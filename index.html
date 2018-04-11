@@ -1,0 +1,35 @@
+<html ng-app="instagram">
+    <head>
+        <script src="node_modules/angular/angular.js"></script>
+       
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="instagram.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>
+          
+            .back
+            {
+                text-align: center;
+                background-color: aliceblue
+            }
+        </style>
+        <title>INSTAGRAM FILTERS</title>
+    </head>
+
+    <body class="back  container fluid-container" ng-controller="firstCtrl as first">
+        
+        <h1>Instagram filters</h1>
+
+        <div >Choose any filter
+            <select class="margin" ng-model="first.filter" ng-init="" ng-options="x for x in first.array" >
+                                     
+            </select>
+            <br>
+            <br>
+            <span class="card-image filter-{{first.filter}}">
+                <img src="download.jpg" alt="image">
+            </span>
+        </div>
+    
+    </body>
+</html>
